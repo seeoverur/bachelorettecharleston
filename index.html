@@ -39,17 +39,7 @@
     <div class="container">
         <div class="row">
             
-            <!-- LEFT COLUMN: Dining & Logistics -->
-            <div class="col-lg-3 col-md-6 mb-4">
-                <h3 class="section-title text-danger">The Sip (Dining)</h3>
-                <div id="dining-feed" class="loading">Loading dining news...</div>
-                
-                <div class="mt-5">
-                    <h3 class="section-title text-primary">Events & Activities</h3>
-                    <div id="events-feed" class="loading">Loading events...</div>
-                </div>
-            </div>
-
+          
             <!-- CENTER COLUMN: Main Story & Nightlife -->
             <div class="col-lg-6 mb-4">
                 
@@ -58,8 +48,35 @@
                     <h2 class="mt-2 fw-bold">
                         <a href="#" class="text-dark text-decoration-none" id="lead-headline">Loading top story...</a>
                     </h2>
-                    <p class="lead fs-6 text-muted" id="lead-description">Fetching latest Charleston news...</p>
                 </div>
+
+                <div id="rss-feed"></div>
+
+<script>
+async function loadRSS() {
+  const feedUrl = 'https://charlestoncitypaper.com/feed/';
+  const response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feedUrl)}`);
+  const data = await response.json();
+  
+  const feedDiv = document.getElementById('rss-feed');
+  let html = '<ul>';
+  
+  data.items.slice(0, 5).forEach(item => {
+    html += `
+      <li>
+        <h3><a href="${item.link}" target="_blank">${item.title}</a></h3>
+        <p>${item.description}</p>
+        <small>${new Date(item.pubDate).toLocaleDateString()}</small>
+      </li>
+    `;
+  });
+  
+  html += '</ul>';
+  feedDiv.innerHTML = html;
+}
+
+loadRSS();
+</script>
 
                 <hr>
 
