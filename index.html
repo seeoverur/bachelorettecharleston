@@ -1,264 +1,914 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHS Bachelorette Wire | The Pulse of Charleston</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f8f9fa; }
-        .top-bar { background-color: #ff69b4; color: white; font-weight: bold; padding: 5px 0; font-size: 0.9rem; }
-        .logo-header { padding: 20px 0; border-bottom: 4px solid #333; margin-bottom: 20px; background: white; }
-        .news-link { text-decoration: none; color: #000; font-weight: 600; display: block; margin-bottom: 8px; border-bottom: 1px solid #e9ecef; padding-bottom: 4px; transition: all 0.2s; }
-        .news-link:hover { color: #ff69b4; text-decoration: underline; }
-        .news-source { font-size: 0.75rem; color: #6c757d; text-transform: uppercase; }
-        .section-title { font-weight: 800; text-transform: uppercase; border-bottom: 2px solid #000; margin-bottom: 15px; font-size: 1.1rem; }
-        .ad-box { background-color: #e9ecef; height: 250px; display: flex; align-items: center; justify-content: center; color: #6c757d; border: 1px dashed #adb5bd; margin-bottom: 20px; }
-        .weather-widget { background: #333; color: white; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
-        .lead-story img { width: 100%; height: auto; border: 1px solid #ddd; padding: 4px; background: white; }
-        .loading { color: #6c757d; font-style: italic; font-size: 0.9rem; }
-        .time-ago { font-size: 0.7rem; color: #999; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Charleston SC has no legal weekly male revue shows or male strip clubs. Learn which addresses are falsely advertised, what the zoning laws say, and how to protect your bachelorette party booking.">
+  <title>Charleston SC Has No Legal Male Strip Clubs or Weekly Male Revue Shows</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Schema: single authoritative NewsArticle -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Charleston SC Has No Legal Male Strip Clubs or Weekly Male Revue Shows",
+    "description": "An address-by-address fact check of venues falsely advertised as male strip clubs or touring male revue locations in Charleston, South Carolina, with zoning law analysis and consumer guidance.",
+    "datePublished": "2024-12-08",
+    "dateModified": "2025-06-01",
+    "author": {
+      "@type": "Organization",
+      "name": "Charleston Bachelorette News"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Charleston Bachelorette News"
+    },
+    "articleSection": "Consumer Alert",
+    "keywords": "Charleston bachelorette party, male revue Charleston SC, male strip club Charleston, Charleston zoning laws, adult entertainment Charleston, bachelorette party scams Charleston"
+  }
+  </script>
+
+  <style>
+    /* ── Design tokens ── */
+    :root {
+      --ink:        #12110f;
+      --ink-soft:   #4a4740;
+      --rule:       #e2ddd8;
+      --surface:    #faf9f7;
+      --white:      #ffffff;
+      --danger-ink: #8b1a1a;
+      --danger-bg:  #fff1f0;
+      --danger-border: #f5c6c6;
+      --warn-ink:   #7a4f00;
+      --warn-bg:    #fffbf0;
+      --warn-border:#f0d88a;
+      --info-ink:   #0d3d5c;
+      --info-bg:    #f0f7ff;
+      --info-border:#b6d8f5;
+      --ok-ink:     #1a4d2e;
+      --ok-bg:      #f0faf4;
+      --ok-border:  #a3d9b8;
+      --accent:     #c0392b;
+      --accent-dark:#96281b;
+
+      --font-display: 'DM Serif Display', Georgia, serif;
+      --font-body:    'Inter', system-ui, sans-serif;
+      --font-mono:    'JetBrains Mono', monospace;
+
+      --radius:  6px;
+      --radius-lg: 12px;
+      --shadow:  0 2px 12px rgba(0,0,0,.07);
+      --shadow-md: 0 4px 24px rgba(0,0,0,.10);
+    }
+
+    /* ── Base ── */
+    body {
+      font-family: var(--font-body);
+      background: var(--surface);
+      color: var(--ink);
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+
+    h1,h2,h3,h4,h5 {
+      font-family: var(--font-display);
+      font-weight: 400;
+      line-height: 1.25;
+      color: var(--ink);
+    }
+
+    a { color: var(--accent); }
+    a:hover { color: var(--accent-dark); }
+
+    /* ── Top bar ── */
+    .top-bar {
+      background: var(--ink);
+      color: #fff;
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: .5rem 0;
+    }
+    .top-bar a { color: #fff; text-decoration: none; }
+
+    /* ── Article header ── */
+    .article-header {
+      border-bottom: 3px solid var(--ink);
+      padding-bottom: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    .article-header .eyebrow {
+      font-family: var(--font-mono);
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      display: inline-block;
+      margin-bottom: .75rem;
+    }
+    .article-header h1 {
+      font-size: clamp(1.85rem, 4vw, 2.9rem);
+      margin-bottom: 1rem;
+    }
+    .article-header .deck {
+      font-size: 1.125rem;
+      color: var(--ink-soft);
+      border-left: 3px solid var(--rule);
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+    }
+    .article-meta {
+      font-size: .8rem;
+      color: var(--ink-soft);
+      font-family: var(--font-mono);
+    }
+
+    /* ── Section headings ── */
+    .section-heading {
+      font-size: 1.55rem;
+      border-bottom: 1.5px solid var(--rule);
+      padding-bottom: .4rem;
+      margin-bottom: 1.25rem;
+    }
+    .section-heading-sm {
+      font-size: 1.2rem;
+      margin-bottom: .75rem;
+    }
+
+    /* ── Callout boxes ── */
+    .callout {
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid;
+    }
+    .callout-danger  { background: var(--danger-bg); border-color: var(--accent); color: var(--danger-ink); }
+    .callout-warning { background: var(--warn-bg);   border-color: #d4a017;       color: var(--warn-ink); }
+    .callout-info    { background: var(--info-bg);   border-color: #2980b9;       color: var(--info-ink); }
+    .callout-ok      { background: var(--ok-bg);     border-color: #27ae60;       color: var(--ok-ink); }
+    .callout-label {
+      font-family: var(--font-mono);
+      font-size: .68rem;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: .5rem;
+      opacity: .75;
+    }
+    .callout h4, .callout h5 {
+      font-size: 1.05rem;
+      margin-bottom: .5rem;
+    }
+
+    /* ── Address fact-check list ── */
+    .address-list { list-style: none; padding: 0; margin: 0; }
+    .address-list li {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: .75rem 1rem;
+      align-items: start;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .address-list li:last-child { border-bottom: none; }
+    .address-badge {
+      font-family: var(--font-mono);
+      font-size: .7rem;
+      font-weight: 600;
+      background: var(--danger-bg);
+      color: var(--danger-ink);
+      border: 1px solid var(--danger-border);
+      border-radius: 4px;
+      padding: .2rem .5rem;
+      white-space: nowrap;
+      margin-top: .1rem;
+    }
+    .address-name {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      margin-bottom: .2rem;
+    }
+    .address-verdict {
+      font-size: .9rem;
+      color: var(--ink-soft);
+    }
+
+    /* ── Photo block ── */
+    .photo-block {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin: 1.75rem 0;
+      box-shadow: var(--shadow);
+    }
+    .photo-block img {
+      width: 100%;
+      max-height: 460px;
+      object-fit: cover;
+      display: block;
+    }
+    .photo-caption {
+      padding: .75rem 1.25rem;
+      font-size: .8rem;
+      color: var(--ink-soft);
+      font-family: var(--font-mono);
+      border-top: 1px solid var(--rule);
+      background: var(--surface);
+    }
+
+    /* ── Zoning cards ── */
+    .zone-card {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 2px solid;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+    .zone-card.legal   { border-color: #27ae60; }
+    .zone-card.illegal { border-color: var(--accent); }
+    .zone-card-header {
+      padding: .65rem 1.25rem;
+      font-family: var(--font-mono);
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .zone-card.legal   .zone-card-header { background: #27ae60; color: #fff; }
+    .zone-card.illegal .zone-card-header { background: var(--accent); color: #fff; }
+    .zone-card-body { padding: 1.25rem; background: var(--white); }
+    .zone-card img {
+      width: 100%;
+      max-height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* ── Steps ── */
+    .step-row {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      padding: .85rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .step-row:last-child { border-bottom: none; }
+    .step-num {
+      font-family: var(--font-mono);
+      font-size: .85rem;
+      font-weight: 700;
+      color: var(--accent);
+      min-width: 1.75rem;
+      padding-top: .1rem;
+    }
+
+    /* ── Sidebar ── */
+    .sidebar-card {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+    .sidebar-card h5 {
+      font-size: 1rem;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: .5rem;
+      margin-bottom: .85rem;
+    }
+    .quick-fact {
+      display: flex;
+      gap: .65rem;
+      align-items: flex-start;
+      padding: .4rem 0;
+      font-size: .88rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    .quick-fact:last-child { border-bottom: none; }
+    .quick-fact-icon { font-size: 1rem; flex-shrink: 0; margin-top: .1rem; }
+
+    /* ── Accordion custom ── */
+    .accordion-button:not(.collapsed) {
+      background: var(--surface);
+      color: var(--ink);
+      box-shadow: none;
+    }
+    .accordion-button:focus { box-shadow: none; }
+    .accordion-item { border-color: var(--rule); }
+
+    /* ── Refund checklist ── */
+    .checklist { list-style: none; padding: 0; }
+    .checklist li {
+      padding: .55rem 0 .55rem 1.75rem;
+      position: relative;
+      border-bottom: 1px solid var(--rule);
+      font-size: .92rem;
+    }
+    .checklist li:last-child { border-bottom: none; }
+    .checklist li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #27ae60;
+      font-weight: 700;
+    }
+
+    /* ── Q&A questions ── */
+    .qa-item {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin-bottom: .65rem;
+    }
+    .qa-q {
+      font-weight: 600;
+      font-size: .92rem;
+      margin-bottom: .25rem;
+    }
+    .qa-hint { font-size: .8rem; color: var(--ink-soft); }
+
+    /* ── Tag badges ── */
+    .tag {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: .68rem;
+      font-weight: 600;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: .2rem .6rem;
+      border-radius: 3px;
+      background: var(--ink);
+      color: #fff;
+      margin-right: .35rem;
+      margin-bottom: .35rem;
+    }
+    .tag-red { background: var(--accent); }
+    .tag-green { background: #27ae60; }
+
+    /* ── Divider ── */
+    .section-rule {
+      border: none;
+      border-top: 1.5px solid var(--rule);
+      margin: 2.5rem 0;
+    }
+
+    /* ── Resource links ── */
+    .resource-link {
+      display: flex;
+      gap: .75rem;
+      align-items: flex-start;
+      padding: .85rem 0;
+      border-bottom: 1px solid var(--rule);
+      text-decoration: none;
+      color: var(--ink);
+      transition: color .15s;
+    }
+    .resource-link:hover { color: var(--accent); }
+    .resource-link:last-child { border-bottom: none; }
+    .resource-link i { font-size: 1.1rem; color: var(--accent); flex-shrink: 0; margin-top: .15rem; }
+    .resource-link-title { font-weight: 600; font-size: .9rem; display: block; }
+    .resource-link-sub { font-size: .78rem; color: var(--ink-soft); }
+
+    /* ── Legal alternatives grid ── */
+    .alt-card {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      height: 100%;
+      box-shadow: var(--shadow);
+    }
+    .alt-card-icon { font-size: 1.5rem; margin-bottom: .5rem; display: block; }
+    .alt-card h6 { font-family: var(--font-display); font-size: 1rem; margin-bottom: .4rem; }
+    .alt-card p { font-size: .88rem; color: var(--ink-soft); margin: 0; }
+
+    /* ── Footer note ── */
+    .footer-note {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      font-size: .85rem;
+      color: var(--ink-soft);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 767px) {
+      .article-header h1 { font-size: 1.65rem; }
+    }
+  </style>
 </head>
 <body>
 
-    <div class="top-bar text-center">
-        <div class="container">
-            <span class="badge bg-dark me-2">ALERTS:</span>
-            <span id="top-alerts">Loading live Charleston updates...</span>
-        </div>
+  <!-- Top bar -->
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <span>Charleston Bachelorette News</span>
+      <span><i class="bi bi-geo-alt-fill me-1"></i>Charleston, SC</span>
     </div>
+  </div>
 
-    <header class="logo-header text-center">
-        <div class="container">
-            <h1 class="display-4 fw-bold">CHS BACH WIRE</h1>
-            <p class="text-muted text-uppercase mb-0">The Unofficial Daily Aggregator for Charleston Parties</p>
-        </div>
-    </header>
+  <div class="container my-5">
+    <div class="row g-5">
 
-    <div class="container">
-        <div class="row">
-            
-          
-            <!-- CENTER COLUMN: Main Story & Nightlife -->
-            <div class="col-lg-6 mb-4">
-                
-                <div class="lead-story text-center mb-4">
-                    <img src="https://via.placeholder.com/600x350?text=Charleston+Skyline" alt="Charleston Scene" id="lead-image">
-                    <h2 class="mt-2 fw-bold">
-                        <a href="#" class="text-dark text-decoration-none" id="lead-headline">Loading top story...</a>
-                    </h2>
+      <!-- ══════════════════════════════════
+           MAIN CONTENT
+      ══════════════════════════════════ -->
+      <div class="col-lg-8">
+        <article>
+
+          <!-- Article Header -->
+          <header class="article-header">
+            <span class="eyebrow"><i class="bi bi-exclamation-octagon-fill me-1"></i>Consumer Alert</span>
+            <h1>Charleston SC Has No Legal Male Strip Clubs or Weekly Male Revue Shows</h1>
+            <p class="deck">Multiple addresses are being falsely advertised as male revue venues. Here is what is actually at each location, what Charleston's zoning laws say, and what bachelorette groups need to know before booking.</p>
+            <div class="article-meta">
+              <time datetime="2024-12-08">December 8, 2024</time> &nbsp;·&nbsp; Updated June 2025 &nbsp;·&nbsp; Charleston, South Carolina
+            </div>
+          </header>
+
+          <!-- Notice callout -->
+          <div class="callout callout-warning">
+            <span class="callout-label"><i class="bi bi-info-circle me-1"></i>Notice for Bachelorette Parties</span>
+            <h4>A touring male revue is not a weekly resident show</h4>
+            <p class="mb-2">By definition, a touring production travels. It does not perform Thursday through Sunday at the same downtown bar, week after week, for the entire year. That is a resident operation — and resident adult entertainment venues require a specific city license and industrial zoning that no downtown Charleston bar holds.</p>
+            <p class="mb-0">Eventbrite currently lists multiple "male revues" in Charleston on any given weekend. Verify each listing independently: call the listed venue directly and ask whether they are hosting the event. In most cases, they are not aware they are listed at all.</p>
+          </div>
+
+          <hr class="section-rule">
+
+          <!-- Section 1: Address Fact Check -->
+          <section class="mb-5">
+            <h2 class="section-heading">Falsely Advertised Addresses: A Verified Fact Check</h2>
+            <p>The following addresses are routinely cited by promoter websites, social media accounts, and third-party ticketing platforms as locations for male strip clubs or touring male revue shows in Charleston, SC. Each has been reviewed against public business records, city zoning designations, and direct contact with the venues.</p>
+
+            <ul class="address-list mt-4">
+
+              <li>
+                <span class="address-badge">NOT A VENUE</span>
+                <div>
+                  <div class="address-name">28 Ann Street, Charleston SC</div>
+                  <div class="address-verdict">This location is not a male strip club or touring male revue venue. The City of Charleston shut this address down for illegal activity. It does not operate as an adult entertainment establishment.</div>
                 </div>
+              </li>
 
-                <div id="rss-feed"></div>
-
-<script>
-async function loadRSS() {
-  const feedUrl = 'https://charlestoncitypaper.com/feed/';
-  const response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feedUrl)}`);
-  const data = await response.json();
-  
-  const feedDiv = document.getElementById('rss-feed');
-  let html = '<ul>';
-  
-  data.items.slice(0, 5).forEach(item => {
-    html += `
-      <li>
-        <h3><a href="${item.link}" target="_blank">${item.title}</a></h3>
-        <p>${item.description}</p>
-        <small>${new Date(item.pubDate).toLocaleDateString()}</small>
-      </li>
-    `;
-  });
-  
-  html += '</ul>';
-  feedDiv.innerHTML = html;
-}
-
-loadRSS();
-</script>
-
-                <hr>
-
-                <h3 class="section-title">The Scene (Nightlife & News)</h3>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div id="nightlife-feed" class="loading">Loading nightlife updates...</div>
-                    </div>
-                    <div class="col-md-6">
-                        <div id="local-news-feed" class="loading">Loading local news...</div>
-                    </div>
+              <li>
+                <span class="address-badge">NOT A VENUE</span>
+                <div>
+                  <div class="address-name">73 Mary Street, Charleston SC</div>
+                  <div class="address-verdict">This address does not contain an entertainment facility of any kind suitable for male revue performances. Unless a show is being staged in a parking structure, this location cannot host such an event.</div>
                 </div>
+              </li>
 
+              <li>
+                <span class="address-badge">RESIDENTIAL</span>
+                <div>
+                  <div class="address-name">Garden Hill, Charleston SC</div>
+                  <div class="address-verdict">Garden Hill is a residential neighborhood. No male strip club, touring male revue, or adult entertainment business operates here. There is no venue to book.</div>
+                </div>
+              </li>
+
+              <li>
+                <span class="address-badge">BAR / NO LICENSE</span>
+                <div>
+                  <div class="address-name">541 King Street — Sultans, Charleston SC</div>
+                  <div class="address-verdict">Sultans is a licensed downtown bar. It does not hold a special adult entertainment license, is not zoned for sexually oriented business operations, and does not host male strippers or male revue productions on any regular or weekly basis.</div>
+                </div>
+              </li>
+
+              <li>
+                <span class="address-badge">FEMALE CLUB</span>
+                <div>
+                  <div class="address-name">2028 Pittsburgh Street — Cheetah Charleston, Charleston SC</div>
+                  <div class="address-verdict">Cheetah Charleston is a female-oriented gentlemen's club. It does not host touring male revues or book male strippers Thursday through Sunday on a recurring basis. Its entertainment license covers its own performers, not outside male revue productions.</div>
+                </div>
+              </li>
+
+            </ul>
+          </section>
+
+          <hr class="section-rule">
+
+          <!-- Section 2: Stop wasting time on performer galleries -->
+          <section class="mb-5">
+            <h2 class="section-heading">Stop Selecting Entertainers from Online Galleries</h2>
+            <p>Bachelorette groups in Charleston routinely spend hours browsing performer photo galleries, comparing packages, and selecting entertainers by appearance from booking websites. This effort is largely wasted, for two reasons.</p>
+            <p>First, a small number of independent male entertainers serve the entire Charleston market. The same performers work under multiple brand names simultaneously. Selecting a specific performer from a gallery does not guarantee that individual will appear at your event.</p>
+            <p>Second, the photos displayed on these sites are not taken in Charleston. They are sourced from national touring productions, agency stock libraries, or performers in other markets entirely. They are not representative of the local talent pool or the scale of event you will receive.</p>
+
+            <div class="photo-block">
+              <img src="charleston-touring-male-revue.png" alt="Promotional photo used by a male revue booking website advertising shows in Charleston SC">
+              <div class="photo-caption">Promotional imagery used across male revue booking sites advertising in Charleston, SC.</div>
             </div>
 
-            <!-- RIGHT COLUMN: Weather & Accommodations -->
-            <div class="col-lg-3 col-md-6 mb-4">
-                
-                <div class="weather-widget text-center">
-                    <h5>CURRENT CHS WEATHER</h5>
-                    <h2 class="display-4" id="temp">--°F</h2>
-                    <p class="mb-0" id="humidity">Checking conditions...</p>
-                </div>
-
-                <div class="ad-box">
-                    <div class="text-center">
-                        <strong>ADVERTISE HERE</strong><br>
-                        <small>Charleston Boat Rentals<br>Party Services<br>VIP Tables</small>
-                    </div>
-                </div>
-
-                <h3 class="section-title text-success">The Stay</h3>
-                <div id="travel-feed" class="loading">Loading travel & accommodation news...</div>
-
+            <div class="photo-block">
+              <img src="charleston-male-revue.png" alt="Male revue gallery photos appearing on multiple competing booking websites in Charleston">
+              <div class="photo-caption">The same performer gallery images frequently appear across multiple competing booking websites targeting Charleston bachelorette groups — and in other cities simultaneously.</div>
             </div>
+
+            <hr class="section-rule">
+
+            <h3 class="section-heading-sm">Live Event Photos from National Productions Are Not Local</h3>
+            <p>Authentic large-scale male revue productions that tour nationally produce verifiable event photography: professional stage lighting, documented crowd sizes, branded production design. If a Charleston-based booking site cannot produce verified, local event photography from actual Charleston performances, that is a significant red flag.</p>
+            <p>The production-quality stage and crowd photos used by local booking sites are sourced from national touring shows — not from events that took place in Charleston, SC.</p>
+
+            <div class="photo-block">
+              <img src="Not-real-photo.png" alt="Stage production photos used by Charleston male revue booking sites sourced from national touring shows, not local events">
+              <div class="photo-caption">Large-scale stage production photos used by Charleston male revue booking websites are sourced from national touring productions. They do not reflect events that have taken place in Charleston.</div>
+            </div>
+          </section>
+
+          <hr class="section-rule">
+
+          <!-- Section 3: Club Aura -->
+          <section class="mb-5">
+            <h2 class="section-heading">The Club Aura Precedent: When Illegal Shows Get Shut Down</h2>
+            <div class="callout callout-danger">
+              <span class="callout-label"><i class="bi bi-building-x me-1"></i>Enforcement History</span>
+              <p class="mb-0">Charleston's enforcement history includes the closure of <strong>Club Aura</strong>, a downtown establishment shut down for hosting illegal strip shows. The closure established a clear precedent: adult entertainment without proper licensing and zoning compliance will not be tolerated in Charleston's commercial districts, regardless of how the event is marketed or structured.</p>
+            </div>
+            <p>The Club Aura case is relevant because operators attempted to classify performances in ways that avoided the adult entertainment designation. City authorities did not accept that framing. The zoning designation of the location, not the marketing language used to describe the event, determined legality.</p>
+          </section>
+
+          <hr class="section-rule">
+
+          <!-- Section 4: Zoning -->
+          <section class="mb-5">
+            <h2 class="section-heading">Charleston's Zoning Laws Prohibit Adult Entertainment Downtown</h2>
+            <p>Charleston, SC maintains some of the most restrictive adult entertainment zoning regulations in South Carolina. Sexually Oriented Businesses (SOBs) are addressed specifically under <strong>Charleston County Zoning and Land Development Regulations, Section 6.4.18</strong>. The ordinance restricts where such businesses may legally operate.</p>
+
+            <div class="row g-3 mb-4">
+              <div class="col-md-6">
+                <div class="callout callout-danger h-100 mb-0">
+                  <span class="callout-label">Prohibited Districts</span>
+                  <ul class="mb-0 ps-3">
+                    <li>King Street commercial corridor</li>
+                    <li>East Bay Street entertainment district</li>
+                    <li>Ann Street nightlife zone</li>
+                    <li>Upper King Street bar district</li>
+                    <li>Market Street tourist corridor</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="callout callout-ok h-100 mb-0">
+                  <span class="callout-label">Where SOBs Are Legally Permitted</span>
+                  <ul class="mb-0 ps-3">
+                    <li>Light Industrial zones (M-1) only</li>
+                    <li>Upper Peninsula / Neck Area</li>
+                    <li>Warehouses, shipyards, manufacturing corridors</li>
+                    <li>Not applicable to any downtown bar or nightclub</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Zoning proof cards -->
+            <h3 class="section-heading-sm mt-4">Visual Proof: Where Is Adult Entertainment Legal in Charleston?</h3>
+            <p>The following zoning designations were compared against addresses actively advertised as male revue venues.</p>
+
+            <div class="zone-card legal">
+              <div class="zone-card-header">✅ Legal Zone: Light Industrial (M-1)</div>
+              <img src="sexually-orientated-zoning-table-charleston.png" alt="Charleston SC zoning table showing Light Industrial M-1 as the only zone permitting Sexually Oriented Businesses">
+              <div class="zone-card-body">
+                <p class="mb-1"><strong>Location:</strong> Upper Peninsula / Neck Area</p>
+                <p class="mb-0">This is the <em>only</em> zoning designation under which Sexually Oriented Businesses are permitted in Charleston. These areas consist of warehouses, industrial facilities, and shipyards — not bars, nightclubs, or downtown entertainment venues.</p>
+              </div>
+            </div>
+
+            <div class="zone-card illegal">
+              <div class="zone-card-header">🚫 Prohibited: King Street &amp; Ann Street</div>
+              <img src="king-street-ann-street-zoning.png" alt="Charleston SC zoning map showing King Street and Ann Street zoned as Limited Business and General Business, prohibiting adult entertainment">
+              <div class="zone-card-body">
+                <p class="mb-1"><strong>Zoning:</strong> Limited Business (LB) / General Business (GB)</p>
+                <p class="mb-1">This is Charleston's primary nightlife district, zoned for restaurants and retail. Proximity to churches, schools, and residential properties creates additional restrictions under the SOB ordinance.</p>
+                <p class="mb-0 fw-semibold text-danger">Verdict: Illegal for strip shows or male revue productions of any kind.</p>
+              </div>
+            </div>
+
+            <div class="zone-card illegal">
+              <div class="zone-card-header">🚫 Prohibited: East Bay Street</div>
+              <img src="east-bay-street-zoning.png" alt="Charleston SC zoning map showing East Bay Street zoned as Limited Business, prohibiting sexually oriented businesses">
+              <div class="zone-card-body">
+                <p class="mb-1"><strong>Zoning:</strong> Limited Business (LB)</p>
+                <p class="mb-1">East Bay Street is zoned to protect Charleston's historic and tourism character. The Limited Business designation explicitly restricts adult entertainment.</p>
+                <p class="mb-0 fw-semibold text-danger">If a ticket lists an East Bay Street address, the show is not taking place there legally.</p>
+              </div>
+            </div>
+
+            <div class="callout callout-info">
+              <span class="callout-label"><i class="bi bi-shield-x me-1"></i>Why "Private Party" Doesn't Make It Legal</span>
+              <p class="mb-0">Some venues attempt to classify shows as private events held behind curtains or in back rooms. Charleston's ordinances are explicit: adult entertainment is illegal in improperly zoned commercial establishments regardless of whether the event is marketed as private, invitation-only, or conducted out of public view. Zoning designation governs the activity, not the marketing language used to describe it.</p>
+            </div>
+          </section>
+
+          <hr class="section-rule">
+
+          <!-- Section 5: Liquor License Risk -->
+          <section class="mb-5">
+            <h2 class="section-heading">Bars Hosting Weekly Shows Risk Losing Their Liquor Licenses</h2>
+            <p>Any licensed bar or nightclub in Charleston that hosts adult entertainment shows without holding a proper adult business license is placing its South Carolina liquor license at direct risk.</p>
+
+            <div class="callout callout-danger">
+              <span class="callout-label"><i class="bi bi-exclamation-triangle me-1"></i>Risks to Establishments</span>
+              <ul class="mb-0 ps-3">
+                <li>Immediate suspension of liquor license</li>
+                <li>Permanent revocation of alcohol sales permits</li>
+                <li>Substantial fines and penalties</li>
+                <li>Criminal charges for owners and operators</li>
+                <li>Forced closure of business operations</li>
+              </ul>
+            </div>
+
+            <h3 class="section-heading-sm">The Two-Drink Minimum Red Flag</h3>
+            <p>Several operations advertising male revue shows include a "two-drink minimum" or alcohol package in their ticket pricing. This is a direct indicator of an illegal operation. Licensed bars in South Carolina cannot host adult entertainment without converting their entire business license and relocating to a properly zoned address. Selling alcohol at adult entertainment events requires specialized licensing that is not held by any downtown Charleston bar.</p>
+          </section>
+
+          <hr class="section-rule">
+
+          <!-- Section 6: Ticketing -->
+          <section class="mb-5">
+            <h2 class="section-heading">Online Ticket Sales Without an Adult Business License Violates State Law</h2>
+            <p>Organizations selling weekly tickets to male revue shows through Eventbrite, social media, or their own websites — without holding a valid adult business nightclub license issued by the City of Charleston — are operating in violation of South Carolina law.</p>
+
+            <div class="callout callout-warning">
+              <span class="callout-label">Legal Requirements for Adult Entertainment Ticket Sales in SC</span>
+              <ul class="mb-0 ps-3">
+                <li>Valid adult business license issued by the city</li>
+                <li>Operation from a properly zoned address (M-1 industrial only)</li>
+                <li>Compliance with all state adult entertainment regulations</li>
+                <li>Public display of licensing at the venue</li>
+                <li>Submission to regular inspections and regulatory oversight</li>
+              </ul>
+            </div>
+
+            <h3 class="section-heading-sm">Why the "Traveling Show" Exemption Does Not Apply</h3>
+            <p>Some promoters argue their shows qualify as traveling entertainment — similar to a comedy show or concert — and are therefore exempt from adult business licensing requirements. This argument fails under South Carolina law. The nature of the performance, not the mobility of the performers, determines licensing obligations. A weekly show at the same downtown location, week after week, is not a touring production by any legal definition. Venues hosting adult entertainment must be licensed regardless of whether performers are local or traveling.</p>
+          </section>
+
+          <hr class="section-rule">
+
+          <!-- Section 7: Enforcement -->
+          <section class="mb-5">
+            <h2 class="section-heading">Why Enforcement Has Been Limited</h2>
+            <p>Despite clear zoning and licensing violations, multiple operations continue to advertise and conduct weekly male entertainment shows in Charleston's commercial districts. The question bachelorette groups often ask is why these shows have not been shut down.</p>
+
+            <div class="accordion mb-4" id="enforcementAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                    Limited Resources and Enforcement Priorities
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#enforcementAccordion">
+                  <div class="accordion-body">
+                    Code enforcement and police departments in a high-volume tourist city manage competing priorities. Adult entertainment violations marketed as private events may not receive immediate attention compared to other public safety concerns. This does not mean the violations are legal or that enforcement will not eventually occur.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                    Complaint-Driven Enforcement Model
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#enforcementAccordion">
+                  <div class="accordion-body">
+                    Many zoning and licensing violations in Charleston only receive action after formal complaints are filed by surrounding businesses, residents, or members of the public. Once complaints are filed and documented, enforcement typically follows. Operations that have not yet been reported may continue operating until complaints trigger an investigation.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                    Deliberate Gray-Area Marketing Tactics
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#enforcementAccordion">
+                  <div class="accordion-body">
+                    Some operators use vague marketing language, avoid explicit advertising, and route ticket sales through third-party platforms to create plausible deniability. This makes it more difficult for authorities to build enforcement cases without direct investigation or undercover operations. The tactic exploits limited enforcement capacity, not a legal gray area in the ordinance itself.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="callout callout-info">
+              <span class="callout-label">Important</span>
+              <p class="mb-0">The absence of enforcement action does not indicate legality or city approval. Regulatory enforcement can change quickly when media attention increases, formal complaints are filed, liquor licenses come up for renewal, or competing businesses request ordinance enforcement. Venues and promoters operating in violation face the risk of immediate closure and loss of liquor licenses at any point.</p>
+            </div>
+          </section>
+
+          <hr class="section-rule">
+
+          <!-- Section 8: Venue Changes -->
+          <section class="mb-5">
+            <h2 class="section-heading">Last-Minute Venue Changes Are a Red Flag</h2>
+            <p>One of the most common tactics used by operators of illegal entertainment shows in Charleston is the last-minute venue change. Bachelorette groups who purchase tickets weeks in advance are increasingly receiving notifications that the event address has changed — often to a downtown location that cannot legally host the advertised show.</p>
+
+            <div class="callout callout-danger">
+              <span class="callout-label"><i class="bi bi-exclamation-octagon me-1"></i>Bait-and-Switch Warning</span>
+              <p class="mb-2">If a venue change directs your group to any of the following, request a full refund immediately:</p>
+              <ul class="mb-0 ps-3">
+                <li>A hookah lounge or bar in downtown Charleston</li>
+                <li>Any address on King Street, East Bay Street, or Ann Street</li>
+                <li>Any commercial establishment in Charleston's tourist districts</li>
+                <li>A location that has not been verified as holding an adult business license</li>
+              </ul>
+            </div>
+
+            <h3 class="section-heading-sm">The Hookah Lounge Switch</h3>
+            <p>A documented pattern involves ticket holders being notified that their show has moved to a downtown hookah lounge or hookah bar. Hookah establishments in Charleston hold licenses for tobacco products and sometimes alcohol — not for adult entertainment. Downtown hookah lounges are in commercial zones explicitly prohibited from hosting such events. The venue risks its own business license, and the event can be shut down by police, leaving attendees without entertainment or refund.</p>
+
+            <h3 class="section-heading-sm">Your Consumer Rights When a Venue Changes</h3>
+            <p>A venue change to an improperly zoned location constitutes a material change to the terms of your purchase. You have grounds for a full refund under breach of contract, misrepresentation, and consumer fraud claims under South Carolina law.</p>
+
+            <div class="callout callout-ok">
+              <span class="callout-label"><i class="bi bi-list-check me-1"></i>Steps to Request a Refund</span>
+              <div class="step-row"><span class="step-num">01</span><div><strong>Document everything.</strong> Save all original booking confirmations, advertised venue addresses, and all communications about the change.</div></div>
+              <div class="step-row"><span class="step-num">02</span><div><strong>Contact the seller immediately</strong> by both email and phone. State clearly that you are requesting a full refund due to a material change in venue location.</div></div>
+              <div class="step-row"><span class="step-num">03</span><div><strong>Reference the specific change.</strong> "The event was advertised at [original address] and has been moved to [new address], which is not zoned for adult entertainment in Charleston, SC."</div></div>
+              <div class="step-row"><span class="step-num">04</span><div><strong>Set a deadline.</strong> Request the refund within five to seven business days in writing.</div></div>
+              <div class="step-row"><span class="step-num">05</span><div><strong>Dispute with your card issuer</strong> if refund is denied. File a chargeback for "services not as described."</div></div>
+              <div class="step-row"><span class="step-num">06</span><div><strong>File a complaint</strong> with the SC Department of Consumer Affairs and the Better Business Bureau.</div></div>
+            </div>
+
+            <h3 class="section-heading-sm mt-3">Questions to Ask Before the Event</h3>
+            <div class="qa-item"><div class="qa-q">❓ What is the exact venue street address?</div><div class="qa-hint">Get a complete address, not "downtown Charleston" or a neighborhood name.</div></div>
+            <div class="qa-item"><div class="qa-q">❓ Has this address changed from what was originally advertised?</div><div class="qa-hint">Compare against your original booking confirmation.</div></div>
+            <div class="qa-item"><div class="qa-q">❓ Does this venue hold an adult business license from the City of Charleston?</div><div class="qa-hint">Ask for the license number and verify it with the city.</div></div>
+            <div class="qa-item"><div class="qa-q">❓ What is your refund policy if the venue is not properly zoned?</div><div class="qa-hint">Get the answer in writing via email before the event date.</div></div>
+            <div class="qa-item"><div class="qa-q">❓ Can you provide the venue's direct phone number so we can confirm?</div><div class="qa-hint">Call the venue independently — not the number provided by the promoter.</div></div>
+          </section>
+
+          <hr class="section-rule">
+
+          <!-- Section 9: Deceptive websites -->
+          <section class="mb-5">
+            <h2 class="section-heading">Deceptive Booking Websites and Brand Aliases</h2>
+            <p>Bachelorette groups searching for male entertainment in Charleston will encounter numerous websites claiming to operate male strip clubs, weekly revues, or licensed adult entertainment venues. The majority of these sites are misleading. Common patterns include:</p>
+
+            <ul class="ps-3">
+              <li class="mb-2"><strong>Vague or missing address information.</strong> Legitimate licensed venues display their address prominently. Deceptive sites use "downtown Charleston" or list addresses that belong to unaffiliated businesses.</li>
+              <li class="mb-2"><strong>No license information.</strong> Legal adult entertainment venues are required to display licensing publicly. Deceptive sites do not mention permits, licenses, or zoning compliance at all.</li>
+              <li class="mb-2"><strong>Multiple brand aliases operated by the same individuals.</strong> The same operators create numerous websites under different names to dominate search engine results and create the impression that multiple legitimate venues exist.</li>
+              <li class="mb-2"><strong>Addresses of legitimate bars listed without consent.</strong> Established downtown bars are listed as venue partners without their knowledge or permission. When contacted, those businesses have no record of the event.</li>
+              <li class="mb-2"><strong>No physical storefront or visible signage.</strong> Licensed adult entertainment businesses have physical, identifiable locations. These operations do not.</li>
+              <li><strong>Pressure to pay deposits before venue details are provided.</strong> Legitimate venues provide complete information upfront. Operations that withhold the address until after payment are a clear warning sign.</li>
+            </ul>
+          </section>
+
+          <hr class="section-rule">
+
+          <!-- Section 10: Legal alternatives -->
+          <section class="mb-5">
+            <h2 class="section-heading">Legal Entertainment Alternatives for Charleston Bachelorette Parties</h2>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="alt-card">
+                  <span class="alt-card-icon">🏠</span>
+                  <h6>Private Male Entertainment</h6>
+                  <p>Hire private entertainers for shows at legally permitted private residences, vacation rentals, or hotel suites. Ensure performers operate as licensed independent contractors.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="alt-card">
+                  <span class="alt-card-icon">🍺</span>
+                  <h6>Nightlife Bar Crawls</h6>
+                  <p>Explore Charleston's licensed bar scene with guided pub crawls visiting legal, properly permitted establishments on King Street, East Bay, and beyond.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="alt-card">
+                  <span class="alt-card-icon">⛵</span>
+                  <h6>Boat Parties &amp; Harbor Cruises</h6>
+                  <p>Charter boats for private parties with entertainment. Waterway operations in Charleston harbor operate under separate federal maritime jurisdiction with proper permits.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="alt-card">
+                  <span class="alt-card-icon">🚗</span>
+                  <h6>Nearby Cities with Licensed Venues</h6>
+                  <p>Myrtle Beach (approximately 90 miles north) has licensed adult entertainment venues operating under proper zoning. Columbia, SC may also offer more permissive options.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <hr class="section-rule">
+
+          <!-- Conclusion -->
+          <section class="mb-5">
+            <h2 class="section-heading">Summary: What Charleston Bachelorette Groups Need to Know</h2>
+            <div class="callout callout-info">
+              <span class="callout-label">Key Facts</span>
+              <ol class="mb-0 ps-3">
+                <li class="mb-1"><strong>Charleston SC has no legal male strip clubs</strong> or licensed weekly male revue shows operating in commercial or tourist districts.</li>
+                <li class="mb-1"><strong>Strict zoning laws</strong> prohibit sexually oriented businesses on King Street, East Bay Street, Ann Street, and all other downtown commercial corridors.</li>
+                <li class="mb-1"><strong>Venues hosting such shows risk losing their South Carolina liquor licenses</strong> and face potential criminal charges.</li>
+                <li class="mb-1"><strong>Organizations selling tickets without a valid adult business license</strong> are violating South Carolina law.</li>
+                <li class="mb-1"><strong>Many advertised venues</strong> are falsely listed by promoter websites without the knowledge or consent of the businesses at those addresses.</li>
+                <li><strong>Absence of enforcement</strong> does not indicate legality. Enforcement can occur at any time and without warning.</li>
+              </ol>
+            </div>
+            <p>Charleston's reputation as a premier bachelorette destination is built on its historic peninsula, world-class dining, harbor access, and vibrant licensed nightlife — not on unlicensed adult entertainment operations that create legal and financial risk for both venues and consumers.</p>
+          </section>
+
+          <!-- Footer note -->
+          <div class="footer-note">
+            <strong>Disclosure:</strong> This article is published for informational and consumer protection purposes. It reflects Charleston County zoning ordinances and South Carolina licensing requirements as of June 2025. Regulations are subject to change. For legal advice specific to your situation, consult a licensed South Carolina attorney. To verify current zoning for any address, contact Charleston City Planning at <strong>(843) 724-3765</strong> or use the <a href="https://gis.charleston-sc.gov/interactive/zoning/" target="_blank">interactive zoning map</a>.
+          </div>
+
+        </article>
+      </div><!-- /col-lg-8 -->
+
+      <!-- ══════════════════════════════════
+           SIDEBAR
+      ══════════════════════════════════ -->
+      <div class="col-lg-4">
+        <div class="position-sticky" style="top: 2rem;">
+
+          <!-- Quick Facts -->
+          <div class="sidebar-card">
+            <h5><i class="bi bi-clipboard-data me-2 text-danger"></i>Quick Facts</h5>
+            <div class="quick-fact"><span class="quick-fact-icon">📍</span><span><strong>No legal male strip clubs</strong> operate in Charleston SC's commercial districts.</span></div>
+            <div class="quick-fact"><span class="quick-fact-icon">⚖️</span><span><strong>Zoning Section 6.4.18</strong> restricts SOBs to Light Industrial (M-1) zones only.</span></div>
+            <div class="quick-fact"><span class="quick-fact-icon">🚫</span><span><strong>Club Aura</strong> was shut down for hosting illegal strip shows downtown.</span></div>
+            <div class="quick-fact"><span class="quick-fact-icon">🍺</span><span><strong>Liquor licenses are at risk</strong> for any bar hosting unlicensed adult entertainment.</span></div>
+            <div class="quick-fact"><span class="quick-fact-icon">🎫</span><span><strong>Ticket sales are illegal</strong> without a valid adult business license.</span></div>
+            <div class="quick-fact"><span class="quick-fact-icon">⚠️</span><span><strong>Many advertised addresses</strong> belong to businesses that have no knowledge of being listed.</span></div>
+          </div>
+
+          <!-- Verify Zoning -->
+          <div class="sidebar-card">
+            <h5><i class="bi bi-map me-2 text-danger"></i>Verify Any Venue's Zoning</h5>
+            <p class="small text-muted mb-3">Before booking, look up the address on the official city zoning map. Takes under two minutes.</p>
+            <div class="step-row pt-0"><span class="step-num">01</span><div class="small">Get the <strong>exact street address</strong> from the promoter — not "downtown" or a neighborhood name.</div></div>
+            <div class="step-row"><span class="step-num">02</span><div class="small">Enter it at the <a href="https://gis.charleston-sc.gov/interactive/zoning/" target="_blank">Charleston Interactive Zoning Map</a>. The zone must be M-1 for adult entertainment to be legal.</div></div>
+            <div class="step-row"><span class="step-num">03</span><div class="small">Call <strong>(843) 724-3765</strong> and ask: "Is [address] zoned to permit sexually oriented businesses?"</div></div>
+            <div class="step-row pb-0"><span class="step-num">04</span><div class="small">Request <strong>proof of adult business licensing</strong> from the promoter in writing.</div></div>
+          </div>
+
+          <!-- Official Resources -->
+          <div class="sidebar-card">
+            <h5><i class="bi bi-link-45deg me-2 text-danger"></i>Official Resources</h5>
+            <a class="resource-link" href="https://www.charleston-sc.gov/295/Zoning" target="_blank">
+              <i class="bi bi-building"></i>
+              <div><span class="resource-link-title">City of Charleston — Zoning Division</span><span class="resource-link-sub">Official zoning ordinances · (843) 724-3765</span></div>
+            </a>
+            <a class="resource-link" href="https://gis.charleston-sc.gov/interactive/zoning/" target="_blank">
+              <i class="bi bi-map"></i>
+              <div><span class="resource-link-title">Interactive Zoning Map</span><span class="resource-link-sub">Look up any Charleston address by zoning designation</span></div>
+            </a>
+            <a class="resource-link" href="https://gis.charleston-sc.gov/gis-docs/PublicMaps/ZoningPen_small.pdf" target="_blank">
+              <i class="bi bi-file-earmark-pdf"></i>
+              <div><span class="resource-link-title">Peninsula Zoning Map (PDF)</span><span class="resource-link-sub">Printable map of all downtown peninsula zoning districts</span></div>
+            </a>
+            <a class="resource-link" href="https://online.encodeplus.com/regs/charlestoncounty-sc/" target="_blank">
+              <i class="bi bi-journal-text"></i>
+              <div><span class="resource-link-title">County Zoning Regulations</span><span class="resource-link-sub">Section 6.4.18 — Sexually Oriented Businesses</span></div>
+            </a>
+          </div>
+
+          <!-- Report -->
+          <div class="sidebar-card">
+            <h5><i class="bi bi-flag me-2 text-danger"></i>Report Illegal Activity</h5>
+            <p class="small text-muted mb-2">If you have witnessed or attended an illegal entertainment operation in Charleston, you can file a report with:</p>
+            <ul class="small mb-0 ps-3">
+              <li class="mb-1">Charleston City Code Enforcement</li>
+              <li class="mb-1">SC Department of Revenue — Liquor Licensing Division</li>
+              <li>Charleston Police Department Non-Emergency Line</li>
+            </ul>
+          </div>
+
+          <!-- Related -->
+          <div class="sidebar-card">
+            <h5><i class="bi bi-grid me-2 text-danger"></i>Related Topics</h5>
+            <a href="../index.html" class="resource-link"><i class="bi bi-arrow-right-short"></i><div><span class="resource-link-title">Charleston Bachelorette Party Ideas</span></div></a>
+            <a href="../news-briefs/charleston-bachelorette-entertainment.html" class="resource-link"><i class="bi bi-arrow-right-short"></i><div><span class="resource-link-title">Legal Entertainment Options</span></div></a>
+            <a href="../charleston-fake-review-investigation.html/verify-venue-zoning.html" class="resource-link"><i class="bi bi-arrow-right-short"></i><div><span class="resource-link-title">Zoning Laws Explained</span></div></a>
+            <a href="../charleston-fake-review-investigation.html/aura-closure-case-study.html" class="resource-link"><i class="bi bi-arrow-right-short"></i><div><span class="resource-link-title">Club Aura Closure Case Study</span></div></a>
+          </div>
+
         </div>
-    </div>
+      </div><!-- /col-lg-4 -->
 
-    <footer class="bg-dark text-white text-center py-4 mt-5">
-        <p class="mb-0">&copy; 2025 CHS Bach Wire. Aggregated News for the Lowcountry Bride.</p>
-        <small class="text-muted">Links open in new windows. Not affiliated with venues. <a href="privacy-policy-terms-of-use.html">Privacy Policy</a>  Content refreshed hourly.</small>
-    </footer>
+    </div><!-- /row -->
+  </div><!-- /container -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <script>
-        // RSS to JSON API - converts RSS feeds to JSON format
-        const RSS_API = 'https://api.rss2json.com/v1/api.json?rss_url=';
-        
-        // Charleston RSS Feeds
-        const feeds = {
-            dining: 'https://www.postandcourier.com/food/rss.xml',
-            events: 'https://www.charlestoncitypaper.com/charleston/Rss.xml?section=2125490',
-            nightlife: 'https://holycitysinner.com/feed/',
-            local: 'https://www.postandcourier.com/charleston/rss.xml',
-            travel: 'https://www.charlestoncvb.com/feed/'
-        };
-
-        // Fetch and display RSS feed
-        async function loadFeed(feedUrl, elementId, maxItems = 5) {
-            try {
-                const response = await fetch(RSS_API + encodeURIComponent(feedUrl));
-                const data = await response.json();
-                
-                if (data.status === 'ok' && data.items) {
-                    displayFeed(data.items.slice(0, maxItems), elementId, data.feed.title);
-                } else {
-                    document.getElementById(elementId).innerHTML = '<small class="text-muted">Feed temporarily unavailable</small>';
-                }
-            } catch (error) {
-                console.error('Error loading feed:', error);
-                document.getElementById(elementId).innerHTML = '<small class="text-muted">Unable to load feed</small>';
-            }
-        }
-
-        // Display feed items
-        function displayFeed(items, elementId, sourceName) {
-            const element = document.getElementById(elementId);
-            let html = '';
-            
-            items.forEach((item, index) => {
-                const timeAgo = getTimeAgo(item.pubDate);
-                const title = item.title.length > 60 ? item.title.substring(0, 60) + '...' : item.title;
-                
-                html += `
-                    <a href="${item.link}" target="_blank" class="news-link">
-                        ${title}
-                        <div class="news-source">${sourceName} • ${timeAgo}</div>
-                    </a>
-                `;
-            });
-            
-            element.innerHTML = html;
-        }
-
-        // Calculate time ago
-        function getTimeAgo(dateString) {
-            const date = new Date(dateString);
-            const now = new Date();
-            const seconds = Math.floor((now - date) / 1000);
-            
-            if (seconds < 3600) return Math.floor(seconds / 60) + ' mins ago';
-            if (seconds < 86400) return Math.floor(seconds / 3600) + ' hrs ago';
-            if (seconds < 604800) return Math.floor(seconds / 86400) + ' days ago';
-            return date.toLocaleDateString();
-        }
-
-        // Load lead story
-        async function loadLeadStory() {
-            try {
-                const response = await fetch(RSS_API + encodeURIComponent(feeds.local));
-                const data = await response.json();
-                
-                if (data.status === 'ok' && data.items.length > 0) {
-                    const lead = data.items[0];
-                    document.getElementById('lead-headline').textContent = lead.title;
-                    document.getElementById('lead-headline').href = lead.link;
-                    document.getElementById('lead-description').textContent = lead.description.replace(/<[^>]*>/g, '').substring(0, 150) + '...';
-                    
-                    // Try to use feed image if available
-                    if (lead.enclosure && lead.enclosure.link) {
-                        document.getElementById('lead-image').src = lead.enclosure.link;
-                    } else if (lead.thumbnail) {
-                        document.getElementById('lead-image').src = lead.thumbnail;
-                    }
-                }
-            } catch (error) {
-                console.error('Error loading lead story:', error);
-            }
-        }
-
-        // Simple weather simulation (replace with real API if desired)
-        function loadWeather() {
-            const temps = [78, 82, 85, 79, 81];
-            const humidity = [85, 88, 90, 92, 87];
-            const temp = temps[Math.floor(Math.random() * temps.length)];
-            const humid = humidity[Math.floor(Math.random() * humidity.length)];
-            
-            document.getElementById('temp').textContent = temp + '°F';
-            document.getElementById('humidity').textContent = `Humidity: ${humid}% ${humid > 88 ? '(Hair Warning ⚠️)' : ''}`;
-        }
-
-        // Load top alerts
-        async function loadTopAlerts() {
-            try {
-                const response = await fetch(RSS_API + encodeURIComponent(feeds.local));
-                const data = await response.json();
-                
-                if (data.status === 'ok' && data.items.length >= 3) {
-                    const alerts = data.items.slice(0, 3).map(item => {
-                        return item.title.substring(0, 50);
-                    }).join(' • ');
-                    
-                    document.getElementById('top-alerts').textContent = alerts;
-                }
-            } catch (error) {
-                document.getElementById('top-alerts').textContent = 'Weekend forecast: Perfect bachelorette weather • King Street packed • New venues opening';
-            }
-        }
-
-        // Initialize all feeds on page load
-        window.addEventListener('DOMContentLoaded', function() {
-            loadFeed(feeds.dining, 'dining-feed', 5);
-            loadFeed(feeds.events, 'events-feed', 4);
-            loadFeed(feeds.nightlife, 'nightlife-feed', 5);
-            loadFeed(feeds.local, 'local-news-feed', 5);
-            loadFeed(feeds.travel, 'travel-feed', 4);
-            loadLeadStory();
-            loadWeather();
-            loadTopAlerts();
-            
-            // Refresh feeds every 10 minutes
-            setInterval(() => {
-                loadFeed(feeds.dining, 'dining-feed', 5);
-                loadFeed(feeds.events, 'events-feed', 4);
-                loadFeed(feeds.nightlife, 'nightlife-feed', 5);
-                loadFeed(feeds.local, 'local-news-feed', 5);
-                loadFeed(feeds.travel, 'travel-feed', 4);
-                loadLeadStory();
-                loadTopAlerts();
-            }, 600000); // 10 minutes
-        });
-    </script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
